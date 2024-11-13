@@ -31,6 +31,21 @@ body {
   padding-bottom: 90px;
 }
 
+.contact_link-container {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Jarak antara elemen */
+}
+
+.language-dropdown select {
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+
 .heading_container {
   display: -webkit-box;
   display: -ms-flexbox;

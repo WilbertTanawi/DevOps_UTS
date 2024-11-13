@@ -58,6 +58,13 @@
                 demo@gmail.com
               </span>
             </a>
+            <a href="" class="language-dropdown">
+              <select id="language-dropdown" onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="id">Bahasa Indonesia</option>
+                <!-- Tambahkan opsi bahasa lain di sini -->
+              </select>
+            </a>
           </div>
         </div>
       </div>
@@ -750,6 +757,19 @@
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/custom.js"></script>
+
+  <script>
+    function changeLanguage() {
+      var language = document.getElementById("language-dropdown").value;
+      if (language === "en") {
+        window.location.href = "index.html"; // Halaman bahasa Inggris
+      } else if (language === "id") {
+        window.location.href = "index_id.html"; // Halaman bahasa Indonesia
+      }
+      // Tambahkan logika untuk bahasa lain jika diperlukan
+    }
+  </script>
+  
 </body>
 
 </html>
